@@ -1,13 +1,13 @@
-package com.webservicestutorial.st_proj;
+package com.webservicestutorial.st_proj.endpoint;
 
-import com.webservicestutorial.GetCourseDetailsRequest;
-import com.webservicestutorial.GetCourseDetailsResponse;
+import com.webservicestutorial.courses.GetCourseDetailsRequest;
+import com.webservicestutorial.courses.GetCourseDetailsResponse;
 import org.springframework.ws.server.endpoint.annotation.Endpoint;
 import org.springframework.ws.server.endpoint.annotation.PayloadRoot;
 import org.springframework.ws.server.endpoint.annotation.RequestPayload;
 import org.springframework.ws.server.endpoint.annotation.ResponsePayload;
 
-import static com.webservicestutorial.GetCourseDetailsResponse.*;
+import static com.webservicestutorial.courses.GetCourseDetailsResponse.*;
 
 /**
  * Created by Admin on 03.02.2018.

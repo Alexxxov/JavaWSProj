@@ -1,4 +1,4 @@
-package com.webservicestutorial.st_proj;
+package com.webservicestutorial.st_proj.config;
 
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.ApplicationContext;
@@ -25,7 +25,6 @@ public class WebServiceConfig {
 
     private static final String NAMESPACE_URI = "http://someBookDetails.com/courses";
 
-    //MessageDispatcherServlet
     @Bean
     public ServletRegistrationBean messageDispatcherServlet (ApplicationContext context) {
         MessageDispatcherServlet messageDispatcherServlet = new MessageDispatcherServlet();
@@ -34,12 +33,6 @@ public class WebServiceConfig {
 
         return new ServletRegistrationBean(messageDispatcherServlet, "/ws/*");
     }
-
-    // /ws/courses.wsdl
-        //
-        // CoursePort
-        // Namespace - http://someCourseDetails.com
-    // response
 
     @Bean(name = "courses")
     public DefaultWsdl11Definition defaultWsdl11Definition(CommonsXsdSchemaCollection xsdSchemaCollection) {

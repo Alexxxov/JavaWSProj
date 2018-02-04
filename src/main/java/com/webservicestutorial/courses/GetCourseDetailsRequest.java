@@ -1,5 +1,5 @@
 
-package com.webservicestutorial;
+package com.webservicestutorial.courses;
 
 import java.math.BigInteger;
 import javax.xml.bind.annotation.XmlAccessType;
